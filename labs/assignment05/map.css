@@ -1,0 +1,67 @@
+body{
+    background-color: lavenderblush;
+    color: rgb(173, 80, 80);
+}
+#mainContent{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(199, 119, 119);
+    border: thin black solid;
+    overflow: auto;
+}
+
+ul{
+    background-color: rgb(199, 119, 119);
+    margin: 0 0;
+    padding: 0 0 ;
+}
+
+ul li{
+    float: left;
+    list-style-type: none;
+}
+
+ul li a{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(199, 119, 119);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(206, 44, 44);
+}
+
+.currentPage{
+    background-color: rgb(134, 27, 27);
+}
+article{
+    text-align: center;
+    width: inherit;
+}
+
+#map{
+    width: 500px;
+    height: 500px;
+    border: solid black 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p a:hover{
+    background-color: rosybrown;
+    color: rgb(240, 208, 208);
+}
+
+
+

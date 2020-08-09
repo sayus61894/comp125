@@ -4,9 +4,34 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="map.css">
         <title>COMP125 - Assignment 05 - Map</title>
+        <!-- <script src="map.js"></script> -->
     </head>
     <body>
-        <div id="maincontent">
+        <div id="mainContent">
+            <nav>
+                <ul>
+                    <li><a href="../assignment03/index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../assignment02/calendar.html">Order</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="../assignment01/assignment01.html">BMR</a></li>
+                    <li><a href="../assignment05/game.html">Game</a></li>
+                    <li><a href="../assignment05/map.html" class="currentPage">Location</a></li>
+                </ul>
+            </nav>
+            <div>
+                <article>
+                    <img src="images/8BIT_NEW_HORIZ_RED_WHITE.webp">
+                    <h1>Visit Us!</h1>
+                    <p>Use the map below to see the location and come visit us!<br>Click the marker to read about 8Bit Beans.</p>
+                    <div id="map"></div>
+                    <p id="disclaimer">I do not own the logo, this is an actual cafe. Click <a target="_blank" href="https://www.8bitbeans.com/">Here</a> to visit their site.<br> The location given is roughly where they are actually located.</p>
+                </article>
+            </div>
         </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCylUih2kV7BMTBP7PAXyCtEIhxiC3xVGg&callback=initMap" defer ></script>
+        <script src="map.js"></script>
+        <script src="../assignment03/schedule.js"></script>
+
     </body>
 </html>
