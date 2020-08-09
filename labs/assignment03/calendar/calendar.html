@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="calStyle.css">
+        <title>COMP125 - Assignment #3 - Calendar</title>
+    </head>
+    <body>
+        <main>
+            <h1>Our Orders</h1>
+            <h3>
+                July Orders
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum, ipsum non provident fugiat, exercitationem expedita impedit at assumenda deserunt alias, voluptates tempora molestias. Accusamus et vitae eligendi vero reiciendis?</p>
+        <table>
+            <thead>
+                <tr>
+                    <th class="weekend"></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th class="weekend"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="weekend diff-month"></td>
+                    <td class="weekend diff-month"></td>
+                    <td class="weekend diff-month"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend"></td>
+                </tr>
+                <tr>
+                    <td class="weekend"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend"></td>
+                </tr>
+                <tr>
+                    <td class="weekend"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend"></td>
+                </tr>
+                <tr>
+                    <td class="weekend"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend"></td>
+                </tr>
+                <tr>
+                    <td class="weekend"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="weekend diff-month"></td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <legend>Place Order</legend>
+            <div id="grid-container">
+            <label>Name: </label>
+            <input type="text" id="name" placeholder="Name">
+
+            <label>Cuisine Type: </label>
+            <select id="foodType">
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="thai">Thai</option>
+                <option value="greek">Greek</option>
+                <option value="mediterranean">Mediterranean</option>
+            </select>
+
+            <label>Dining Option: </label>
+            <select id="diningOption">
+                <option value="DineIn">dine-in</option>
+                <option value="TakeOut">take-out</option>
+            </select>
+
+
+            <label>Order Date: </label>
+            <input type="date" id="datePicker">
+            
+            <input type="button" id="addOrder" title="Submit Order" value="Submit Order">
+            </div>
+        </fieldset>
+        </main>
+        <script src="calendar.js"></script>
+        <script src="../schedule.js"></script>
+    </body>
+</html>

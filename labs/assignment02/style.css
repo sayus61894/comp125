@@ -1,0 +1,105 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+    color: rgb(119, 106, 50);
+}
+
+main, table, fieldset{
+    margin: 0 auto;
+}
+main{
+    padding: 20px;
+    width: 1200px;
+    background-color: beige;
+}
+
+h1{
+    color: rgb(224, 172, 103);
+    border-bottom: dotted thick rgb(224, 172, 103);
+}
+
+.weekend{
+    color: red;
+}
+
+table, th, td{
+    border: thin black solid;
+    border-collapse: collapse;
+}
+
+
+td{
+    font-size: small;
+    height: 50px;
+    vertical-align: top;
+    width: 160px;
+}
+
+td div{
+    color: rgb(71, 40, 10);
+    border-bottom:  burlywood dotted;
+}
+
+fieldset{
+    width: 500px;
+    border: thin dotted;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    text-align: right;
+}
+
+
+input[type="button"]{
+    grid-column: 1/ span 2;
+}
+
+nav{
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(199, 119, 119);
+    border: thin black solid;
+    overflow: auto;
+}
+
+ul{
+    background-color: rgb(199, 119, 119);
+    margin: 0 0;
+    padding: 0 0 ;
+}
+
+ul li{
+    float: left;
+    list-style-type: none;
+}
+
+ul li a{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(199, 119, 119);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(206, 44, 44);
+}
+
+.currentPage{
+    background-color: rgb(134, 27, 27);
+}

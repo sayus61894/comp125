@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>COMP301 - Assignment 01</title>
+        <link type="text/css" href="style.css" rel="stylesheet" media="screen and (min-width:559px)">
+        <link type="text/css" href="styleSmallScreen.css" rel="stylesheet" media="screen and (max-width:559px)">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../assignment03/index.html" >Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../assignment02/calendar.html">Order</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="../assignment01/assignment01.html" class="currentPage">BMR</a></li>
+                    <li><a href="../assignment05/game.html">Game</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>BMR Calculator</h1>
+            <h3>Welcome to the  Basal Metabolic Rate Calculator</h3>
+            <p>The basal metabolic rate is a measure of the rate at which the body burns energy. This is usually stated in terms of time. One method of estimating the metabolic rate of a person is using the Harris-Benedict Equation. It takes into account the intensity of a person's activity, gender, weight, height, and their age. Over the years there have been many improvements to the equation; here we will be using the original Harris-Benedict Equation.</p>
+            <p id="warning">Please Enter All Fields, Otherwise 0 will be used for numeric values, and default values for others will be used.</p>
+            <div id="calculator">
+                
+                <!--<ul id="choice">
+                    <li id="choice1">Metric</li>
+                    <li id="choice2">Imperial</li>
+                </ul> -->
+                <div id="trial">
+                    <p class="sys" id="choice1">Metric</p>
+                    <p class="sys" id="choice2">Imperial</p>
+                </div>
+
+                <form action="#">
+
+                    <label for="gender">Gender: </label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="age">Age: </label>
+                    <input type="number" size="6" min="18" name="age" id="age" required>
+                    
+                    <label for="height">Height: </label>
+                    <div>
+                        <input type="number" size="6" min="0" name="height" id="heightBig" required><label id="big"> Meters</label>
+                        <br>
+                        <input type="number" size="6" min="0" name="height" id="heightSmall" required><label id="small"> Centimeters</label>
+                    </div>
+
+                    <label for="weight">Weight: </label>
+                    <div>
+                        <input type="number" size="6" min="0" name="weight" id="weight" required><label id="weightLabel"> Kilograms</label>
+                    </div>
+
+                    <label>Activity Intensity: </label>
+
+                    <div id="intensity">
+                        <input type="radio" name="activityIntensity" value="2.25" id="high"><label for="high">High</label>
+                        <br>
+                        <input type="radio" name="activityIntensity" value="1.76" id="moderate"><label for="moderate">Moderate</label>
+                        <br>
+                        <input type="radio" name="activityIntensity" value="1.53" id="low"><label for="low">Low</label><br>
+                    </div>
+                    <button type="button" id="button">Calculate</button>
+                </form>
+            </div>
+            <hr>
+            <footer>
+                <h6><span id="left">&copy;Parth Shreyash Patel - COMP125 Summer 2020</span><span id="right"><a href="../../../index.html">Back To Main Page</a></span></h6>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

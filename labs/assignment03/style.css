@@ -1,0 +1,64 @@
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(199, 119, 119);
+    border: thin black solid;
+    overflow: auto;
+}
+
+ul{
+    background-color: rgb(199, 119, 119);
+    margin: 0 0;
+    padding: 0 0 ;
+}
+
+ul li{
+    float: left;
+    list-style-type: none;
+}
+
+ul li a{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(199, 119, 119);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(206, 44, 44);
+}
+
+.currentPage{
+    background-color: rgb(134, 27, 27);
+}
+
+main{
+    width: 100%;
+}
+
+article{
+    float: right;
+    width: 75%;
+    margin: 0 0;
+    padding: 10px 10px;
+}
+
+aside{
+    width: 21.4444%;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    background-color: rgb(240, 218, 218);
+    overflow: auto;
+    margin: 0 0;
+}

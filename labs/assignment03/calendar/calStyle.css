@@ -1,0 +1,65 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+    color: rgb(119, 106, 50);
+}
+
+main, table, fieldset{
+    margin: 0 auto;
+}
+main{
+    padding: 20px;
+    width: 1200px;
+    background-color: beige;
+}
+
+h1{
+    color: rgb(224, 172, 103);
+    border-bottom: dotted thick rgb(224, 172, 103);
+}
+
+.weekend{
+    color: red;
+}
+
+table, th, td{
+    border: thin black solid;
+    border-collapse: collapse;
+}
+
+
+td{
+    font-size: small;
+    height: 50px;
+    vertical-align: top;
+    width: 160px;
+}
+
+td div{
+    color: rgb(71, 40, 10);
+    border-bottom:  burlywood dotted;
+}
+
+fieldset{
+    width: 500px;
+    border: thin dotted;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    text-align: right;
+}
+
+
+input[type="button"]{
+    grid-column: 1/ span 2;
+}

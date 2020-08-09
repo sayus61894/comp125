@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+#gridContainer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px 300px 300px;
+}
+
+#item01{
+    border: dotted rgb(31, 28, 28) 2px;
+    border-radius: 20%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 120px;
+    font-size: 40px;
+}
+
+#item01:hover{
+    background-color: #857c7c;
+    color: rgb(238, 217, 217);
+    border: dotted grey 1px;
+}
