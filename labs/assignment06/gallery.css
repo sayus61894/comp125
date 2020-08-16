@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#mainBody{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(199, 119, 119);
+    border: thin black solid;
+    overflow: auto;
+}
+
+ul{
+    background-color: rgb(199, 119, 119);
+    margin: 0 0;
+    padding: 0 0 ;
+}
+
+ul li{
+    float: left;
+    list-style-type: none;
+}
+
+ul li a{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(199, 119, 119);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(206, 44, 44);
+}
+
+.currentPage{
+    background-color: rgb(134, 27, 27);
+}
+
+main{
+    height: 85%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows:10% auto auto auto 10%;
+}
+
+#galleryPic{
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 1;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.buttons{
+    grid-row: 3 / span 1;
+    text-align: center;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    font-size: xx-large;
+    background-color: rgb(231, 177, 177);
+    border: hotpink 3px dashed;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.buttons:hover{
+    background-color: darkgray;
+    color: white;
+    border-color: white;
+}
+
+#previous{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    grid-column: 1;
+    border-right: none;
+}
+
+#next{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-column: 3;
+    border-left: none;
+}
+
+#description{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+}
+
+#reload{
+    height: 50px;
+    text-align: center;
+    grid-row: 5;
+    grid-column: 2;
+    border: solid black 1px;
+    background-color: rgb(211, 151, 151);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#reload p{
+    font-size: 20px;
+    padding-top: 15px;
+}
