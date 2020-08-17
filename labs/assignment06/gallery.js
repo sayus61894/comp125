@@ -3,6 +3,7 @@ $(document).ready(function(){
     var image = [];
     var count = 0;
     var xmlTimeAmount = [];
+    var current;
 
     /*$.ajax({
         type: 'GET',
@@ -49,52 +50,56 @@ $(document).ready(function(){
                 xmlTimeAmount.push(covers[i].getElementsByTagName("time")[0].childNodes[0].nodeValue);
                 //console.log(i + " -- " +image[i] + " : " + xmlTimeAmount[i]);
             }
+            current = xmlTimeAmount[0];
+
+            var timer = function(){
+                //setInterval(function(){
+                    clearInterval(start);
+                    //console.log(current);
+                    count++;
+                    //console.log(count);
+                    $("img").fadeOut(300, function(){ $("img").attr('src', "../assignment06/images/"+image[count % image.length]); }).fadeIn(300);
+                    current = xmlTimeAmount[count % image.length];
+                    start = setInterval(timer, current);
+                    //setTimeout(timer, xmlTimeAmount[count % image.length]);
+            //}, xmlTimeAmount[count % image.length]);
+            }
+            //3000);
+        
+            var start = setInterval(timer, current);
+        
+        //Previous Button Clicked
+            $("#previous").click(function(){
+                clearInterval(start);
+                if(count === 0){
+                    count = image.length;
+                    $("img").fadeOut(500, function(){ $("img").attr('src', "../assignment06/images/"+image[image.length-1]) }).fadeIn(500);
+                    count--;
+                }else{
+                    count--;
+                    //console.log(count % image.length);
+                    $("img").fadeOut(500, function(){ $("img").attr('src', "../assignment06/images/"+image[count % image.length])}).fadeIn(500);
+                };
+                //setTimeout(timer, 500);
+            });
+
+
+        //Next Button Clicked
+            $("#next").click(function(){
+                clearInterval(start);
+                count++;
+                //console.log(count % image.length);
+                $("img").fadeOut(500, function(){ $("img").attr('src', "../assignment06/images/"+image[count % image.length])}).fadeIn(500);
+                //setTimeout(timer, 500);
+            });
+        
+        //Reload Function
+            $("#reload").click(function(){
+                location.reload();
+            });
+            //var timer = switchPicture();
+
         }
     }
 
-
-
-    $("#previous").click(function(){
-        clearInterval(timer);
-        if(count === 0){
-            count = image.length;
-            $("img").fadeOut(500, function(){
-                $("img").attr('src', "../assignment06/images/"+image[image.length-1])
-            }).fadeIn(500);
-            count--;
-        }else{
-            count--;
-            //console.log(count % image.length);
-            $("img").fadeOut(500, function(){
-                $("img").attr('src', "../assignment06/images/"+image[count % image.length])
-            }).fadeIn(500);
-        };
-        //setTimeout(timer, 500);
-    });
-
-    $("#next").click(function(){
-        clearInterval(timer);
-        count++;
-        //console.log(count % image.length);
-        $("img").fadeOut(500, function(){
-            $("img").attr('src', "../assignment06/images/"+image[count % image.length])
-        }).fadeIn(500);
-        //setTimeout(timer, 500);
-    });
-
-    var timer =
-        setInterval(() => {
-            //var currentTime = Number(xmlTimeAmount[count % image.length]);
-            count++;
-            //console.log(count);
-            $("img").fadeOut(300, function(){
-                $("img").attr('src', "../assignment06/images/"+image[count % image.length]);
-            }).fadeIn(300);
-    }, 3000);
-
-    $("#reload").click(function(){
-        location.reload();
-    });
-
-    //var timer = switchPicture();
 })

@@ -1,20 +1,20 @@
 <xml>
     <cover>
         <fileName>batman-50-coliseum-of-comics-ale-garza-virgin-cover.jpg</fileName>
-        <time>3000</time>
+        <time>5000</time>
     </cover>
     <cover>
         <fileName>batman-50-comic-market-street-Natali-Sanders-cover.jpg</fileName>
-        <time>2000</time>
+        <time>2500</time>
 
     </cover>
     <cover>
         <fileName>batman-50-krs-comics-warren-louw-black-background-variant-cover.jpg</fileName>
-        <time>1000</time>
+        <time>1250</time>
 
     </cover>
     <cover>
         <fileName>batman-50-zmx-comics-Jorge-Jimenez-cover.jpg</fileName>
-        <time>500</time>
+        <time>625</time>
     </cover>
 </xml>

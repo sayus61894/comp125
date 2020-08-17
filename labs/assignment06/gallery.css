@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 218, 218);
 }
 
 #mainBody{
@@ -49,10 +50,9 @@ a:hover{
 }
 
 main{
-    height: 85%;
     display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows:10% auto auto auto 10%;
+    grid-template-columns: 22% auto 22%;
+    grid-template-rows: 10% auto auto auto 10%;
 }
 
 #galleryPic{
@@ -60,7 +60,11 @@ main{
     grid-column: 2 / span 1;
     text-align: center;
     overflow: hidden;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: lightgray;
+    border: lightpink 2px dotted;
+    border-bottom: none;
 }
 
 img{
@@ -79,12 +83,13 @@ img{
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-weight: normal;
 }
 
 .buttons:hover{
     background-color: darkgray;
     color: white;
-    border-color: white;
+    border-color: rgb(245, 218, 218);;
 }
 
 #previous{
@@ -104,6 +109,15 @@ img{
 #description{
     grid-row: 1 / span 1;
     grid-column: 1 / span 3;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(82, 37, 37);
+}
+
+#description h1{
+    color: rgb(134, 27, 27);
+    border-bottom: lightcoral solid 1px;
+    margin-bottom: 5px;
 }
 
 #reload{
@@ -111,7 +125,9 @@ img{
     text-align: center;
     grid-row: 5;
     grid-column: 2;
-    border: solid black 1px;
+    border: lightpink 2px dotted;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: rgb(211, 151, 151);
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -122,4 +138,19 @@ img{
 #reload p{
     font-size: 20px;
     padding-top: 15px;
+    font-weight: bolder;
+}
+
+#reload:hover{
+    color: white;
+    background-color: rgb(241, 28, 28);
+}
+
+p{
+    background-color: inherit;
+}
+
+.arrow{
+    font-size: 100px;
+    font-weight: bolder;
 }
