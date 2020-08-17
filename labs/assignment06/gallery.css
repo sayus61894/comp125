@@ -51,13 +51,13 @@ a:hover{
 
 main{
     display: grid;
-    grid-template-columns: 22% auto 22%;
-    grid-template-rows: 10% auto auto auto 10%;
+    grid-template-columns: 10.5% 13.5% auto 13.5% 10.5%;
+    grid-template-rows: 12% auto auto auto 15%;
 }
 
 #galleryPic{
     grid-row: 2 / span 3;
-    grid-column: 2 / span 1;
+    grid-column: 3 / span 1;
     text-align: center;
     overflow: hidden;
     border-top-left-radius: 20px;
@@ -76,7 +76,7 @@ img{
     text-align: center;
     padding-top: 50%;
     padding-bottom: 50%;
-    font-size: xx-large;
+    font-size: x-large;
     background-color: rgb(231, 177, 177);
     border: hotpink 3px dashed;
     -moz-user-select: none;
@@ -95,20 +95,20 @@ img{
 #previous{
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    grid-column: 1;
+    grid-column: 2;
     border-right: none;
 }
 
 #next{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    grid-column: 3;
+    grid-column: 4;
     border-left: none;
 }
 
 #description{
     grid-row: 1 / span 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 5;
     text-align: center;
     padding-top: 10px;
     color: rgb(82, 37, 37);
@@ -124,8 +124,9 @@ img{
     height: 50px;
     text-align: center;
     grid-row: 5;
-    grid-column: 2;
+    grid-column: 3;
     border: lightpink 2px dotted;
+    border-top: none;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: rgb(211, 151, 151);
@@ -152,5 +153,18 @@ p{
 
 .arrow{
     font-size: 100px;
+    font-weight: bolder;
+}
+
+#spoiler{
+    color: transparent;
+}
+
+#spoiler:hover{
+    color:red;
+    content: none;
+}
+
+#alert{
     font-weight: bolder;
 }
